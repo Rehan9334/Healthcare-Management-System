@@ -1,0 +1,13 @@
+server:
+  port: 1040
+
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:healthcare-config-repo

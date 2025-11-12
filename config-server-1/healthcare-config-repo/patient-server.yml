@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: patient-server-1
+  datasource:
+    url: jdbc:mysql://localhost:3306/patients_db
+    username: root
+    password: qaisar786
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  cache:
+    type: redis
+  data:
+    redis:
+      host: localhost
+      port: 6379
+server:
+  port: 1042

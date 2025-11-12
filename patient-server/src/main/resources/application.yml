@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: patient-server
+  config:
+    import: optional:configserver:http://localhost:1040
+
+# This file only helps to connect to Config Server.
+# The actual DB and Redis settings will be in your config repo.
